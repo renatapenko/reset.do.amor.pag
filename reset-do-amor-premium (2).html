@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reset do Amor — Renata Penko Maximiliano</title>
+<meta name="description" content="Uma experiência terapêutica de 7 dias para interromper os padrões emocionais que fazem você repetir a mesma história no amor. Por Renata Penko Maximiliano, psicanalista e psicoterapeuta sistêmica.">
+<meta property="og:title" content="Reset do Amor">
+<meta property="og:description" content="7 dias para interromper o padrão emocional que faz você repetir a mesma história no amor.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Reset do Amor",
+  "description": "Experiência terapêutica de 7 dias para interromper padrões emocionais nos relacionamentos.",
+  "offers": {
+    "@type": "Offer",
+    "price": "97.00",
+    "priceCurrency": "BRL"
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #F7F1E8;
+    color: #2B2118;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 540px; margin: 0 auto; padding: 0 26px; }
+  .serif { font-family: 'Fraunces', serif; }
+
+  /* fade-in ao rolar */
+  .fade { opacity: 0; transform: translateY(10px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .fade.visible { opacity: 1; transform: translateY(0); }
+
+  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; line-height: 1.25; }
+
+  /* HERO */
+  .hero {
+    padding: 64px 0 44px;
+    text-align: center;
+  }
+  .hero-foto {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    margin: 0 auto 28px;
+    background: #E6DDD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #E6DDD1;
+  }
+  .hero-foto img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-foto .placeholder-txt { font-family: 'Fraunces', serif; font-size: 13px; color: #A38F73; text-align: center; padding: 8px; }
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .hero .subtitulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4A3F33;
+    max-width: 420px;
+    margin: 0 auto 36px;
+  }
+
+  /* SECTIONS */
+  section { padding: 52px 0; }
+  .linha { border: none; border-top: 1px solid #E6DDD1; margin: 0; }
+  h2.titulo-secao {
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  p { margin-bottom: 20px; }
+  p:last-child { margin-bottom: 0; }
+  p.destaque {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2B2118;
+  }
+
+  /* BOTÃO */
+  .btn {
+    display: block;
+    width: 100%;
+    background: #4E6256;
+    color: #FFFFFF;
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: transform 0.15s ease, background 0.2s ease;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn:hover { background: #405146; }
+
+  /* CHECKLIST */
+  .checklist { list-style: none; margin: 24px 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid #E6DDD1;
+    font-size: 16.5px;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist .marca { color: #A15C47; font-weight: 700; flex-shrink: 0; }
+
+  /* MOCKUPS iPhone */
+  .mockups-scroll {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 10px 0 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mockups-scroll::-webkit-scrollbar { display: none; }
+  .phone-frame {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    width: 200px;
+    height: 410px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    border: 6px solid #2B2118;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(43,33,24,0.12);
+  }
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #F7F1E8;
+    border-radius: 20px;
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .phone-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #A38F73;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .phone-title { font-family: 'Fraunces', serif; font-size: 15px; font-weight: 600; margin-bottom: 12px; line-height: 1.3; }
+  .phone-option {
+    background: #FFFDF9;
+    border: 1px solid #E6DDD1;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 10px;
+    margin-bottom: 6px;
+    color: #4A3F33;
+  }
+  .phone-day-row { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid #E6DDD1; }
+  .phone-day-dot { width: 18px; height: 18px; border-radius: 50%; background: #2B2118; color: #fff; font-size: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'Fraunces', serif; }
+  .phone-day-txt { font-size: 10.5px; font-weight: 600; }
+  .phone-bar { display: flex; gap: 3px; margin-bottom: 16px; }
+  .phone-bar div { flex: 1; height: 2px; background: #E6DDD1; border-radius: 2px; }
+  .phone-bar div.on { background: #A15C47; }
+  .phone-body-txt { font-size: 11px; line-height: 1.6; color: #3A3025; flex-grow: 1; }
+  .phone-check { width: 40px; height: 40px; border-radius: 50%; background: #4E6256; color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 18px; }
+
+  /* CARDS DOS 7 DIAS */
+  .dia-card {
+    display: flex;
+    gap: 18px;
+    padding: 24px 0;
+    border-bottom: 1px solid #E6DDD1;
+  }
+  .dia-card:last-child { border-bottom: none; }
+  .dia-numero {
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #A15C47;
+    flex-shrink: 0;
+    width: 46px;
+  }
+  .dia-titulo { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+  .dia-texto { font-size: 15.5px; color: #4A3F33; }
+
+  /* VOCÊ RECEBE */
+  .recebe-card {
+    padding: 22px 0;
+    border-bottom: 1px solid #E6DDD1;
+  }
+  .recebe-card:last-child { border-bottom: none; }
+  .recebe-card .marca { color: #4E6256; font-weight: 700; margin-right: 8px; }
+  .recebe-card .txt { font-size: 16.5px; font-weight: 600; }
+
+  /* QUEM SOU EU */
+  .sobre-foto {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+    background: #E6DDD1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre-foto img { width: 100%; height: 100%; object-fit: cover; }
+  .sobre-foto .placeholder-txt { font-family: 'Fraunces', serif; font-size: 12px; color: #A38F73; text-align: center; padding: 6px; }
+
+  /* FAQ ACCORDION */
+  .faq-item { border-bottom: 1px solid #E6DDD1; }
+  .faq-pergunta {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px 0;
+    font-family: 'Fraunces', serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: #2B2118;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .faq-pergunta .sinal { font-size: 20px; color: #A15C47; transition: transform 0.3s ease; flex-shrink: 0; }
+  .faq-pergunta.aberto .sinal { transform: rotate(45deg); }
+  .faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+    font-size: 15.5px;
+    color: #4A3F33;
+  }
+  .faq-resposta.aberto { max-height: 300px; opacity: 1; padding-bottom: 20px; }
+
+  /* PREÇO */
+  .preco-box {
+    background: #2B2118;
+    color: #F7F1E8;
+    border-radius: 24px;
+    padding: 40px 28px;
+    text-align: center;
+  }
+  .preco-box .nome { font-family: 'Fraunces', serif; font-size: 22px; margin-bottom: 6px; }
+  .preco-box .valor { font-family: 'Fraunces', serif; font-size: 54px; font-weight: 600; margin: 12px 0 4px; }
+  .preco-box .valor span { font-size: 22px; vertical-align: super; }
+  .preco-box .parcela { font-size: 14px; color: #C9BCA3; margin-bottom: 26px; }
+  .preco-box .comparativo { font-size: 13.5px; color: #A99D87; margin-top: 18px; }
+
+  .whats-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #4A3F33;
+    text-decoration: none;
+  }
+
+  .closing p { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 500; color: #2B2118; }
+
+  /* CTA fixo mobile */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(247,241,232,0.97);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid #E6DDD1;
+    padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
+    z-index: 50;
+  }
+  .sticky-cta .btn { padding: 14px 20px; font-size: 15.5px; }
+  body { padding-bottom: 78px; }
+
+  @media (min-width: 640px) {
+    .hero h1 { font-size: 46px; }
+    h2.titulo-secao { font-size: 34px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="wrap hero">
+  <h1>Você não continua sofrendo porque escolhe os homens errados.</h1>
+  <p class="subtitulo">Você continua sofrendo porque entra em todos os relacionamentos pela mesma estrutura emocional.</p>
+  <a href="https://pay.kiwify.com.br/4zultKJ" class="btn">QUERO COMEÇAR MEU RESET</a>
+</div>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- NARRATIVA DE ABERTURA -->
+<section class="wrap fade">
+  <p>Você conhece alguém.</p>
+  <p>No começo, tudo parece leve.</p>
+  <p>Você é divertida.<br>Segura.<br>Espontânea.</p>
+  <p>Mas basta você começar a se apaixonar...<br>alguma coisa muda.</p>
+  <p>Você pensa demais.<br>Começa a interpretar mensagens.<br>Um atraso parece abandono.<br>Um silêncio parece rejeição.<br>Uma mudança de tom parece desinteresse.</p>
+  <p>Você sente necessidade de controlar o que antes simplesmente vivia.</p>
+  <p>Promete para si mesma que não vai criar expectativas.<br>Promete que não vai aceitar menos do que merece.<br>Promete que não vai implorar atenção.</p>
+  <p>Mas, quando percebe...<br>está fazendo exatamente o que jurou que nunca mais faria.</p>
+  <p class="destaque">E a pergunta é: por quê?</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<section class="wrap fade">
+  <p>Por que mulheres inteligentes...<br>fortes...<br>bem-sucedidas...<br>seguras em praticamente todas as áreas da vida...<br>se transformam completamente quando se apaixonam?</p>
+  <p>Porque o problema nunca foi falta de inteligência.<br>Nem falta de amor-próprio.<br>Nem azar no amor.</p>
+  <p>O problema é que, quando um relacionamento desperta suas emoções mais profundas...<br>você deixa de responder como a mulher adulta que é hoje.<br>E começa a responder através da estrutura emocional que foi construída muitos anos atrás.</p>
+  <p>É por isso que você repete histórias.<br>Trocam os homens.<br>Trocam os cenários.<br>Trocam as promessas.<br>Mas o final continua parecido.</p>
+  <p class="destaque">Porque você não está repetindo pessoas.<br>Está repetindo uma forma de se relacionar.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<section class="wrap fade">
+  <p>Talvez ninguém nunca tenha explicado isso para você.</p>
+  <p>Você acredita que sofre por causa do relacionamento.<br>Mas, na maioria das vezes...<br>você sofre por causa da forma como sua estrutura emocional responde ao relacionamento.</p>
+  <p>Enquanto uma mulher vive o presente...<br>a outra revive, sem perceber, antigos medos.</p>
+  <p>Medo de ser rejeitada.<br>Medo de ser abandonada.<br>Medo de não ser suficiente.<br>Medo de confiar.<br>Medo de perder.</p>
+  <p>Esses medos não aparecem porque o relacionamento é ruim.<br>Eles aparecem porque alguém importante ativou uma estrutura que já existia dentro de você.</p>
+  <p>É por isso que você pode conhecer um homem completamente diferente...<br>e sentir exatamente as mesmas dores.</p>
+  <p class="destaque">Porque o sofrimento não nasce apenas da pessoa que está à sua frente.<br>Ele nasce da maneira como você acessa o amor.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<section class="wrap fade">
+  <p>E existe uma consequência que quase ninguém percebe.</p>
+  <p>Você começa a acreditar que esse é o seu jeito.<br>Que nasceu assim.<br>Que sempre será intensa.<br>Ciumenta.<br>Ansiosa.<br>Controladora.<br>Desconfiada.<br>Ou distante.</p>
+  <p class="destaque">Mas isso não é personalidade.<br>É proteção.</p>
+  <p>Proteções que um dia fizeram sentido.<br>Mas que hoje impedem você de viver aquilo que mais deseja.</p>
+  <p class="destaque">Um relacionamento leve. Adulto. Funcional. Saudável.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- POR QUE O RESET -->
+<section class="wrap fade">
+  <p>Foi por isso que eu criei o Reset do Amor.</p>
+  <p>Não para ensinar você a conquistar alguém.<br>Não para convencer ninguém a voltar.<br>Não para dizer que basta pensar positivo.</p>
+  <p>O Reset do Amor foi criado para começar a interromper os padrões emocionais que fazem você repetir a mesma história, mesmo quando muda de parceiro.</p>
+  <p>Durante sete dias, você vai percorrer uma experiência terapêutica estruturada para ajudar você a reconhecer essas respostas automáticas e iniciar um novo caminho.</p>
+  <p class="destaque">Porque nenhuma mulher consegue construir um relacionamento adulto enquanto continua entrando nele através de antigas estratégias de sobrevivência.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- CHECKLIST -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">Antes de continuar...</h2>
+  <p>Responda com sinceridade. Você se reconhece em alguma dessas situações?</p>
+  <ul class="checklist">
+    <li><span class="marca">✓</span> Você pensa demais quando alguém demora para responder.</li>
+    <li><span class="marca">✓</span> Tem medo de demonstrar o que sente e acabar se machucando.</li>
+    <li><span class="marca">✓</span> Analisa conversas várias vezes procurando sinais de rejeição.</li>
+    <li><span class="marca">✓</span> Vive em estado de alerta quando está em um relacionamento.</li>
+    <li><span class="marca">✓</span> Aceita situações que sabe que não deveria aceitar.</li>
+    <li><span class="marca">✓</span> Atrai pessoas emocionalmente indisponíveis.</li>
+    <li><span class="marca">✓</span> Ou percebe que você mesma se torna emocionalmente inacessível quando alguém realmente se aproxima.</li>
+    <li><span class="marca">✓</span> Já prometeu dezenas de vezes que seria diferente... e repetiu tudo outra vez.</li>
+    <li><span class="marca">✓</span> Está cansada de começar relacionamentos cheia de esperança e terminar sempre com a sensação de que perdeu mais um pedaço de si.</li>
+  </ul>
+  <p class="destaque">Se você respondeu "sim" para algumas dessas perguntas... talvez o problema nunca tenha sido falta de sorte.</p>
+  <p>Talvez esteja na hora de interromper o padrão que continua escrevendo a mesma história.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- O QUE É -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">O que é o Reset do Amor?</h2>
+  <p>O Reset do Amor é uma experiência terapêutica de 7 dias criada para mulheres que perceberam que não querem apenas encontrar um relacionamento.</p>
+  <p class="destaque">Querem conseguir sustentá-lo de forma leve, adulta, funcional e saudável.</p>
+  <p>Durante sete dias, você será conduzida por um processo estruturado que une diagnóstico emocional, práticas guiadas e intervenções terapêuticas para começar a interromper os padrões que fazem você repetir a mesma história no amor.</p>
+  <p>Você não precisa reservar horas do seu dia.<br>Você não precisa baixar aplicativos complicados.<br>Você não precisa esperar meses para começar.</p>
+  <p class="destaque">Assim que sua inscrição é confirmada, sua jornada começa.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- COMO FUNCIONA -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">Como funciona?</h2>
+  <p>Assim que você entra no Reset do Amor, recebe acesso imediato ao seu espaço de acompanhamento pelo WhatsApp. É por lá que você recebe todas as orientações e os vídeos terapêuticos de cada etapa.</p>
+  <p>Você também recebe acesso ao Mini App Reset do Amor, que funciona diretamente no navegador do seu celular. Sem instalação. Sem complicação.</p>
+</section>
+
+<section class="wrap fade">
+  <p>Antes de iniciar a jornada, você responde um diagnóstico rápido. Esse diagnóstico identifica qual das cinco estruturas emocionais está mais ativa em você neste momento.</p>
+  <p>Isso não significa que você tenha apenas uma. Significa apenas que existe uma delas conduzindo seus relacionamentos com mais intensidade hoje.</p>
+  <p class="destaque">A partir daí, sua jornada começa. Cada dia foi pensado para preparar o próximo. Nada acontece por acaso.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- OS 7 DIAS -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">O que acontece durante os sete dias?</h2>
+  <div class="dia-card">
+    <div class="dia-numero">1</div>
+    <div>
+      <div class="dia-titulo">Divórcio emocional com o passado</div>
+      <div class="dia-texto">Você começa rompendo emocionalmente com tudo aquilo que ainda mantém você presa às histórias do passado. Porque nenhuma mulher consegue viver plenamente um novo relacionamento enquanto continua emocionalmente ligada ao antigo.</div>
+    </div>
+  </div>
+  <div class="dia-card">
+    <div class="dia-numero">2</div>
+    <div>
+      <div class="dia-titulo">A estrutura da rejeição</div>
+      <div class="dia-texto">Aquela voz que faz você acreditar que nunca será suficiente. Que faz você desistir antes mesmo de tentar. Ou aceitar qualquer demonstração de afeto por medo de perder.</div>
+    </div>
+  </div>
+  <div class="dia-card">
+    <div class="dia-numero">3</div>
+    <div>
+      <div class="dia-titulo">A estrutura do abandono</div>
+      <div class="dia-texto">A necessidade constante de garantir que o outro fique. O medo da solidão. A ansiedade quando alguém se afasta. O desespero silencioso de sentir que será deixada novamente.</div>
+    </div>
+  </div>
+  <div class="dia-card">
+    <div class="dia-numero">4</div>
+    <div>
+      <div class="dia-titulo">A estrutura da humilhação</div>
+      <div class="dia-texto">A tendência de diminuir quem você é para caber na vida de alguém. Aceitar menos. Pedir pouco. Silenciar necessidades para não incomodar.</div>
+    </div>
+  </div>
+  <div class="dia-card">
+    <div class="dia-numero">5</div>
+    <div>
+      <div class="dia-titulo">A estrutura da traição</div>
+      <div class="dia-texto">A dificuldade de confiar. A necessidade de controlar. A sensação permanente de que alguma coisa ruim está prestes a acontecer.</div>
+    </div>
+  </div>
+  <div class="dia-card">
+    <div class="dia-numero">6</div>
+    <div>
+      <div class="dia-titulo">A estrutura da injustiça</div>
+      <div class="dia-texto">A cobrança excessiva. A necessidade de fazer tudo certo. A dificuldade de receber amor sem sentir que precisa merecê-lo primeiro.</div>
+    </div>
+  </div>
+  <div class="dia-card">
+    <div class="dia-numero">7</div>
+    <div>
+      <div class="dia-titulo">Ativação da nova identidade</div>
+      <div class="dia-texto">Você encerra a jornada fortalecendo uma nova forma de ocupar seus relacionamentos. Não baseada no medo. Mas em uma postura mais consciente, segura e adulta. Porque não basta interromper um padrão. É preciso construir outro no lugar.</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- VOCÊ RECEBE -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">Durante essa experiência, você recebe:</h2>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Diagnóstico inicial</span> para identificar qual estrutura emocional está mais ativa.</div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Mini App Reset do Amor</span> para acompanhar toda a jornada.</div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Sete práticas terapêuticas guiadas.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Sete intervenções</span> conduzidas por mim, entregues diretamente no WhatsApp.</div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Gravações ao vivo ou no seu tempo</span> — você escolhe como assistir.</div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Ativação de Identidade</span> realizada ao final da jornada.</div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Direito de repetir a próxima turma</span> sem pagar uma nova inscrição.</div>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- PARA QUEM -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">O Reset do Amor é para você que...</h2>
+  <p>Está solteira e sente que sempre vive a mesma história.<br>
+  Está em um relacionamento, mas percebe que vive em constante estado de alerta.<br>
+  Ama profundamente, mas sente que o medo sempre fala mais alto.<br>
+  Já fez terapia, leu livros, assistiu vídeos e continua repetindo os mesmos comportamentos.<br>
+  Quer entender por que muda tanto quando se apaixona.<br>
+  Deseja construir um relacionamento leve, adulto, funcional e saudável.<br>
+  Está cansada de se desgastar emocionalmente, quando tudo o que queria era simplesmente conseguir amar.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<section class="wrap fade">
+  <p class="destaque">Talvez você ainda esteja pensando... "Mas e se eu já estiver em um relacionamento?"</p>
+  <p>Então o Reset também é para você. Porque ele não foi criado apenas para mulheres solteiras. Foi criado para qualquer mulher que percebeu que, independentemente do relacionamento em que esteja, continua reagindo através dos mesmos medos.</p>
+  <p>O objetivo não é mudar o seu parceiro. É começar a mudar a maneira como você entra na relação.</p>
+  <p class="destaque">Porque quando sua estrutura emocional muda... a forma como você ama também muda.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- QUEM SOU EU -->
+<section class="wrap fade" style="text-align: center;">
+  <div class="sobre-foto">
+    <img src="data:image/jpeg;base64,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" alt="Renata Penko Maximiliano">
+  </div>
+  <h2 class="titulo-secao">Quem vai conduzir você nessa jornada?</h2>
+  <p style="text-align: left;">Meu nome é Renata Penko Maximiliano. Sou psicanalista e psicoterapeuta sistêmica.</p>
+  <p style="text-align: left;">Durante anos acompanhei mulheres que chegavam até mim acreditando que o problema era sempre o parceiro. "O dedo podre." "O homem errado." "A falta de sorte."</p>
+  <p style="text-align: left;">Mas, sessão após sessão, comecei a perceber algo que mudaria completamente a forma como eu compreendia os relacionamentos.</p>
+  <p class="destaque" style="text-align: left;">A maioria delas não repetia homens. Repetia a mesma estrutura emocional.</p>
+  <p style="text-align: left;">Sempre que se apaixonavam, deixavam de responder como mulheres adultas e passavam a reagir através de antigos mecanismos de proteção construídos na infância.</p>
+  <p style="text-align: left;">Foi dessa percepção que nasceu o Reset do Amor.</p>
+  <p style="text-align: left;">Não como um curso. Não como uma promessa de transformação mágica. Mas como uma experiência terapêutica estruturada para ajudar mulheres a interromper padrões emocionais que continuam conduzindo suas relações.</p>
+  <p class="destaque" style="text-align: left;">Meu compromisso não é prometer um relacionamento perfeito. Meu compromisso é oferecer um caminho para que você deixe de repetir a mesma história.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- FAQ -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">Perguntas frequentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">Preciso baixar algum aplicativo?<span class="sinal">+</span></button>
+    <div class="faq-resposta">Não. O Mini App funciona diretamente no navegador do seu celular. Você recebe o acesso e começa imediatamente.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">Preciso acompanhar ao vivo?<span class="sinal">+</span></button>
+    <div class="faq-resposta">Não. As intervenções terapêuticas ficam disponíveis para você assistir no seu tempo. Quem desejar pode acompanhar a gravação sendo realizada ao vivo, mas isso é totalmente opcional.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">É terapia de grupo?<span class="sinal">+</span></button>
+    <div class="faq-resposta">Não. Não é terapia de grupo. Eu conduzo e gravo cada uma das sete intervenções, e você recebe individualmente, no seu WhatsApp, no seu tempo.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">Estou solteira. Esse processo faz sentido para mim?<span class="sinal">+</span></button>
+    <div class="faq-resposta">Sim. Porque o objetivo não é tratar um relacionamento específico. É trabalhar os padrões emocionais que você leva para qualquer relacionamento.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">Já estou em um relacionamento. Posso fazer?<span class="sinal">+</span></button>
+    <div class="faq-resposta">Sim. Muitas mulheres percebem que continuam vivendo medo, insegurança, controle, ansiedade ou sofrimento mesmo estando acompanhadas. O Reset foi criado exatamente para começar a interromper esses padrões.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">Nunca fiz terapia. Vou conseguir acompanhar?<span class="sinal">+</span></button>
+    <div class="faq-resposta">Sim. Toda a experiência foi construída para ser simples, prática e guiada. Você será conduzida passo a passo durante toda a jornada.</div>
+  </div>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- CUSTO DE NÃO AGIR -->
+<section class="wrap fade">
+  <h2 class="titulo-secao">O que pode acontecer se você não fizer nada?</h2>
+  <p>Daqui alguns meses... talvez exista outra pessoa. Outra conversa. Outro começo. Outra promessa.</p>
+  <p>Mas, se a estrutura emocional continuar exatamente a mesma... é muito provável que o sofrimento apenas encontre um novo cenário.</p>
+  <p class="destaque">Porque padrões emocionais não desaparecem sozinhos. Eles tendem a se repetir. Até que alguém decida interrompê-los.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<section class="wrap fade">
+  <p>Hoje você pode tomar uma decisão diferente.</p>
+  <p>Você pode continuar esperando que o próximo relacionamento finalmente cure aquilo que ainda dói. Ou pode começar a tratar aquilo que faz você transformar qualquer relacionamento em um lugar de sofrimento.</p>
+  <p>O Reset do Amor não promete mudar outra pessoa. Ele foi criado para começar a mudar a forma como você vive o amor.</p>
+  <p class="destaque">Porque quando você muda a forma de se relacionar... você abre espaço para construir aquilo que sempre desejou: um relacionamento leve, adulto, funcional e saudável.</p>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- PREÇO -->
+<section class="wrap fade" id="preco">
+  <h2 class="titulo-secao">Hoje você recebe:</h2>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Diagnóstico inicial.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Mini App Reset do Amor.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Experiência terapêutica completa de 7 dias.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Intervenções entregues diretamente no WhatsApp.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Gravações ao vivo ou no seu tempo.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Ativação de Identidade ao final da jornada.</span></div>
+  <div class="recebe-card"><span class="marca">✔</span><span class="txt">Direito de repetir a próxima turma sem pagar de novo.</span></div>
+
+  <div style="height: 32px;"></div>
+
+  <div class="preco-box">
+    <div class="nome">Reset do Amor</div>
+    <div class="valor"><span>R$</span>97</div>
+    <div class="parcela">ou parcelado em até 12x no cartão</div>
+    <a href="https://pay.kiwify.com.br/4zultKJ" class="btn" style="background:#F7F1E8; color:#2B2118;">QUERO COMEÇAR MEU RESET</a>
+    <div class="comparativo">Menos do que o valor de uma sessão individual.</div>
+  </div>
+  <a href="https://wa.me/5567981448229?text=Oi%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20Reset%20do%20Amor" class="whats-link">Dúvidas? Fale comigo no WhatsApp</a>
+</section>
+
+<div class="wrap"><hr class="linha"></div>
+
+<!-- FECHAMENTO -->
+<section class="wrap fade closing">
+  <p>Uma última coisa...</p>
+  <p style="font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 500;">Talvez você tenha chegado até esta página porque está cansada. Cansada de tentar entender. Cansada de começar de novo. Cansada de prometer para si mesma que será diferente.</p>
+  <p style="font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 500;">Se esse for o seu momento... eu quero caminhar esses sete dias com você. Não para dizer que será fácil. Nem para prometer uma vida perfeita. Mas para ajudar você a interromper um ciclo que talvez esteja sendo repetido há anos.</p>
+  <p>Porque existe uma grande diferença entre encontrar um novo amor... e conseguir viver esse amor de uma forma leve, adulta, funcional e saudável.</p>
+  <p>É exatamente essa jornada que começa hoje.</p>
+  <div style="height: 28px;"></div>
+  <a href="https://pay.kiwify.com.br/4zultKJ" class="btn">QUERO COMEÇAR MEU RESET DO AMOR</a>
+</section>
+
+<div class="sticky-cta">
+  <a href="https://pay.kiwify.com.br/4zultKJ" class="btn">QUERO COMEÇAR MEU RESET</a>
+</div>
+
+<script>
+  function toggleFaq(btn) {
+    const resposta = btn.nextElementSibling;
+    const aberto = resposta.classList.contains('aberto');
+    document.querySelectorAll('.faq-resposta.aberto').forEach(el => el.classList.remove('aberto'));
+    document.querySelectorAll('.faq-pergunta.aberto').forEach(el => el.classList.remove('aberto'));
+    if (!aberto) {
+      resposta.classList.add('aberto');
+      btn.classList.add('aberto');
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
